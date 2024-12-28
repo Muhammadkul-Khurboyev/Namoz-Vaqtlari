@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Namoz vaqtlari</title>
+  <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+  <header class="py-5 fixed top-0 left-0 w-full bg-lime-400/70 backdrop-blur-sm shadow-md z-50" style="box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;">
+    <div class="container mx-auto px-5">
+      <div class="flex items-center justify-between">
+        <a href="./index.html">
+          <img src="./images/moon.png" alt="Site logotip" width="50" height="50">
+        </a>
+        <nav class="">
+          <ul class="flex items-center gap-x-[100px]">
+            <li class="">
+              <a class="text-[rgb(0,71,7)] font-sans font-semibold text-[18px] hover:border-b hover:border-[rgb(0,71,7)]" href="#">Asosiy</a>
+            </li>
+            <li class="">
+              <a class="text-[rgb(0,71,7)] font-sans font-semibold text-[18px] hover:border-b hover:border-[rgb(0,71,7)]" href="#">Media</a>
+            </li>
+            <li class="">
+              <a class="text-[rgb(0,71,7)] font-sans font-semibold text-[18px] hover:border-b hover:border-[rgb(0,71,7)]" href="#">Siyrat</a>
+            </li>
+            <li class="">
+              <a class="text-[rgb(0,71,7)] font-sans font-semibold text-[18px] hover:border-b hover:border-[rgb(0,71,7)]" href="#">Qur'on</a>
+            </li>
+          </ul>
+        </nav>
+        <a class="text-[rgb(0,71,7)] font-sans font-semibold text-[18px]" href="tel:+998881570507">+998 88 157 05 07</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="">
+    <section class="relative">
+      <img class="w-full h-[800px] absolute -z-10" src="./images/masjid.webp" alt="Hero section img">
+      <div class="container mx-auto px-5">
+        <div class="">
+          <ul class="namoz-vaqtlari-list flex items-center justify-evenly absolute w-full left-0 top-[520px] z-20"></ul>
+        </div>
+      </div>
+    </section>
+    <section class="absolute top-[calc(625px)] bg-white w-full pt-32 pb-3">
+      <div class="container mx-auto px-5">
+        <div class="flex items-center justify-between">
+          <div class="wrapper-btn flex gap-x-7">
+            <button class="day-btn border border-lime-400 py-4 px-5 bg-lime-600 text-white rounded-xl hover:bg-white hover:text-lime-500 font-semibold" data-name="day" type="button">Day</button>
+            <button class="week-btn border border-lime-400 py-4 px-5 bg-lime-600 text-white rounded-xl hover:bg-white hover:text-lime-500 font-semibold" data-name="week" type="button">Week</button>
+            <button class="month-btn border border-lime-400 py-4 px-5 bg-lime-600 text-white rounded-xl hover:bg-white hover:text-lime-500 font-semibold" data-name="monthly" type="button">Month</button>
+          </div>
+          <form class="namoz-form" action="">
+            <select class="region border p-4 rounded-xl border-lime-400 mr-4 font-semibold">
+              <option value="all">Select your region</option>
+              <option value="andijon">Andijon</option>
+              <option value="namangan">Namangan</option>
+              <option value="qarshi">Qashqadaryo</option>
+              <option value="toshkent">Toshkent</option>
+              <option value="samarqand">Samarqand</option>
+              <option value="navoiy">Navoiy</option>
+              <option value="nukus">Nukus</option>
+            </select>
+            <button class="border border-lime-400 py-4 px-5 bg-lime-600 text-white rounded-xl hover:bg-white hover:text-lime-500 font-semibold" type="submit">
+              search
+            </button>
+          </form>
+        </div>
+        <div>
+          <h2 class="list-region-name text-center text-2xl text-green-500 font-bold"></h2>
+          <ul class="week-month-list rounded-[20px] py-10 border-t-2 flex flex-col gap-y-5 mt-4">
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <template class="day-template">
+    <li class="time-item w-[200px] h-[200px] bg-white p-4 rounded-[10px] border border-lime-400 flex items-center justify-center"
+    style="background-image: url('./images/ec075bd7-979b-4bb6-a0bb-856e694df55b.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;">
+      <div class="flex flex-col text-center">
+        <span class="text-white text-2xl font-semibold">Bomdod</span>
+        <span class="bomdod text-white text-xl font-medium"></span>
+      </div>
+    </li>
+
+    <li class="time-item w-[200px] h-[200px] bg-white p-4 rounded-[10px] border border-lime-400 flex items-center justify-center" style="background-image: url('./images/good-morning.gif');
+    background-repeat: no-repeat;
+    background-size: cover; background-position: center;">
+      <div class="flex flex-col text-center">
+        <span class="text-white font-semibold text-2xl">Quyosh</span>
+        <span class="quyosh text-white font-medium text-xl"></span>
+      </div>
+    </li>
+
+    <li class="time-item w-[200px] h-[200px] bg-white p-4 rounded-[10px] border border-lime-400 flex items-center justify-center"
+    style="background-image: url('./images/sunny.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;">
+      <div class="flex flex-col text-center">
+        <span class="text-white text-2xl font-semibold">Peshin</span>
+        <span class="peshin text-white text-xl font-medium"></span>
+      </div>
+    </li>
+
+    <li class="time-item w-[200px] h-[200px] bg-white p-4 rounded-[10px] border border-lime-400 flex items-center justify-center"
+    style="background-image: url('./images/asr_sun.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;">
+      <div class="flex flex-col text-center">
+        <span class="text-white text-2xl font-semibold">Asr</span>
+        <span class="asr text-white text-xl font-medium"></span>
+      </div>
+    </li>
+
+    <li class="time-item w-[200px] h-[200px] bg-white p-4 rounded-[10px] border border-lime-400 flex items-center justify-center"
+    style="background-image: url('./images/tenor.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;">
+      <div class="flex flex-col text-center">
+        <span class="text-white font-semibold text-2xl">Shom</span>
+        <span class="shom text-white font-medium text-xl"></span>
+      </div>
+    </li>
+
+    <li class="time-item w-[200px] h-[200px] bg-white p-4 rounded-[10px] border border-lime-400 flex items-center justify-center"
+    style="background-image: url('./images/xufton_time.avif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;">
+      <div class="flex flex-col text-center">
+        <span class="text-white text-2xl font-semibold">Xufton</span>
+        <span class="xufton text-white text-xl font-medium"></span>
+      </div>
+    </li>
+  </template>
+
+  <template class="week-month-template">
+    <li class="week-item flex items-center justify-between p-5 text-slate-600 border border-lime-600 rounded-[20px]">
+      <span class="week-day w-[95px] font-semibold"></span>
+      <span class="text-left font-semibold">
+        Bomdod: <time class="week-bomdod" datetime=""></time>
+      </span>
+      <span class="text-left font-semibold">
+        Quyosh: <time class="week-quyosh" datetime=""></time>
+      </span>
+      <span class="text-left font-semibold">
+        Peshin: <time class="week-peshin" datetime=""></time>
+      </span>
+      <span class="text-left font-semibold">
+        Asr: <time class="week-asr" datetime=""></time>
+      </span>
+      <span class="text-left font-semibold">
+        Shom: <time class="week-shom" datetime=""></time>
+      </span>
+      <span class="text-left font-semibold">
+        Xufton: <time class="week-xufton" datetime=""></time>
+      </span>
+    </li>
+  </template>
+
+  <script src="./main.js"></script>
+</body>
+</html>
